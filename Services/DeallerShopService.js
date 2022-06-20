@@ -1,17 +1,21 @@
-class DeallerShopService {
+module.exports = class DeallerShopService {
     constructor(deallerShop) {
         this.deallerShop = deallerShop;
     }
 
     addCar(car) {
-        setTimeout((car) => {
             this.deallerShop.cars.push(car);
-        }, 2000);
+            console.log('A car ' + car.brand + ' of model ' + car.model + ' has been purchased');
     }
 
     removeLastCar() {
-        setTimeout(() => {
-            this.deallerShop.cars.length > 0 ? this.deallerShop.cars.pop() : 'DealerShop is empty';
-        }, 2000);
+            if (this.deallerShop.cars.length > 0) {
+                const length = this.deallerShop.cars.length;
+                const car = this.deallerShop.cars[length-1];
+                this.deallerShop.cars.pop();
+                console.log('A car ' + car.brand + ' of model ' + car.model + ' has been sold');
+            } else {
+                console.log('DealerShop is empty');
+            }
     }
 }
