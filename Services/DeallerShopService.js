@@ -8,7 +8,7 @@ module.exports = class DeallerShopService {
             console.log('A car ' + car.brand + ' of model ' + car.model + ' has been purchased');
     }
 
-    removeLastCar() {
+    removeCar() {
             if (this.deallerShop.cars.length > 0) {
                 const length = this.deallerShop.cars.length;
                 const car = this.deallerShop.cars[length-1];

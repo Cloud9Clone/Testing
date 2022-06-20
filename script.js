@@ -5,8 +5,6 @@ const Car = require('./Models/Car');
 const mercedesA = new Car('Mercedes', 'A-Class');
 const mercedesB = new Car('Mercedes', 'B-Class');
 const mercedesC = new Car('Mercedes', 'C-Class');
-const mercedesD = new Car('Mercedes', 'D-Class');
-const mercedesE = new Car('Mercedes', 'E-Class');
 const bmw = new Car('BMW', '326');
 
 const cars = [mercedesA, mercedesB, mercedesC, mercedesD, mercedesE];
@@ -17,6 +15,6 @@ console.log('Welcome to the dealer shop \n');
 
 deallerShopService.addCar(bmw);
 
-deallerShopService.removeLastCar();
+deallerShopService.removeCar();
 
 deallerShop.previewCars();
