@@ -1,4 +1,3 @@
-const DeallerShopService = require('./Services/DeallerShopService');
 const DeallerShop = require('./Models/DeallerShop');
 const Car = require('./Models/Car');
 
@@ -9,12 +8,7 @@ const bmw = new Car('BMW', '326');
 
 const cars = [mercedesA, mercedesB, mercedesC];
 const deallerShop = new DeallerShop(cars);
-const deallerShopService = new DeallerShopService(deallerShop);
 
 console.log('Welcome to the dealer shop \n');
-
-deallerShopService.addCar(bmw);
-
-deallerShopService.removeCar();
 
 deallerShop.previewCars();
