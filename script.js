@@ -7,6 +7,7 @@ const mercedesB = new Car('Mercedes', 'B-Class');
 const mercedesC = new Car('Mercedes', 'C-Class');
 const mercedesD = new Car('Mercedes', 'D-Class');
 const mercedesE = new Car('Mercedes', 'E-Class');
+const mercedesG = new Car('Mercedes', 'G-Class');
 const bmw = new Car('BMW', '326');
 
 const cars = [mercedesA, mercedesB, mercedesC, mercedesD, mercedesE];
